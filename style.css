@@ -1,29 +1,48 @@
-.box {
-   padding: 20px;
-   border: 1px solid #ccc;
-   position: relative;
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
 }
 
-.box::before {
-   content: "Вставлено перед содержимым.";
-   display: block;
-   color: #007bff;
-   margin-bottom: 10px;
-}
-.box::after {
-   content: "Вставлено после содержимого.";
-   display: block;
-   color: #007bff;
-   margin-top: 10px;
+.text {
+    font-size: 20px;
+    margin: 20px 0;
 }
 
-.paragraph::first-letter {
-   font-size: 2em;
-   font-weight: bold;
-   color: #ff0000;
+.text::before {
+    content: "→ ";
+    color: blue;
+    font-size: 25px;
 }
 
-.paragraph::first-line {
-   text-transform: uppercase;
-   font-weight: bold;
+.title {
+    color: black;
+}
+
+.title::after {
+    content: " ★";
+    color: red;
+}
+
+.block {
+    width: 300px;
+    padding: 25px;
+    margin: 30px 0;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.block::before {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: blue;
+    margin-bottom: 15px;
+}
+
+.block::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: green;
+    margin-top: 15px;
 }
