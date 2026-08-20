@@ -1,0 +1,12 @@
+.box {
+   padding: 20px;
+   border: 1px solid #ccc;
+   position: relative;
+}
+
+.box::before {
+   content: "Вставлено перед содержимым.";
+   display: block;
+   color: #007bff;
+   margin-bottom: 10px;
+}
